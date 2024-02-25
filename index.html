@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>certilogo.ua</title>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <img src="img_file\certilogo-logo-light.svg" alt="CERTILOGO">
+        </header>
+        <main>
+        
+            <form>
+                <div class="form-container">
+                    <label for="code">Чтобы начать, введите ваш Код CLG</label>
+                    <div class="CLG-container">
+                        <div class="CLG">
+                            <p>CLG:</p>
+                        </div>
+                        <input type="text" id="code" name="code">
+                        
+                    </div>
+                </div>   
+            </form>
+
+            <div class="button-container">
+                <button id="start-button" onclick="startLoading()">
+                    <span id="button-text">НАЧАТЬ &#x25B6;</span>
+                    <span id="loading-spinner" class="spinner"></span> <!-- Додаємо елемент для кружечка завантаження -->
+                </button>
+            </div>
+            
+        </main>
+        <footer>
+            <p>Начиная аутентификацию, вы обязались принять наши <a href="yrt3\yrt.html">Условия</a> и Политику конфиденциальности</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

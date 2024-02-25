@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img_file/si_nig1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+ }
+ 
+ @media (max-width: 480px) {
+    body {
+        background-size: cover;
+    }
+ }
+ 
+ .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ 
+ header {
+    padding: 20px;
+    text-align: center;
+ }
+ 
+ .certilogo-logo-light {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+ }
+ 
+ .certilogo-logo-light img {
+    max-width: 100%;
+    height: auto;
+ }
+ 
+ main {
+    padding: 20px;
+ }
+ 
+ form {
+    text-align: center;
+ }
+ 
+ label {
+    display: block;
+    margin-bottom: 10px;
+    right: 25px;
+    top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+ }
+ 
+ label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -45px;
+    width: 8px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+ }
+ 
+ .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 -70px 0;
+ }
+ 
+ #start-button3 {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px 140px;
+    border: none;
+    display: inline-block;
+    margin: 3px;
+    width: auto;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 99999;
+ }
+ 
+ #start-button4 {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px 110px;
+    border: none;
+    display: inline-block;
+    margin: 3px;
+    width: auto;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 99999;
+ }
+ 
+ #start-button3:hover,
+ #start-button4:hover {
+    background-color: #ccc;
+ }
+ 
+ footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+ }
+ 
+ @media (max-width: 480px) {
+   /* Змініть відступи, шрифти та інші стилі для малих екранів */
+   header, main, form {
+       padding: 10px;
+   }
+   label{
+      font-size: 15px;
+      display: block;
+      margin-bottom: 10px;
+      right: -10px;
+      top: -10px;
+      font-size: 15px; /* Змініть розмір шрифту для тексту в підвалі */
+      font-weight: bold; /* Зробіть текст жирнішим */
+      position: relative; /* Потрібно для псевдоелементу */ /* Зменшуємо розмір шрифту для полів вводу на малих екранах */
+  }
+  label::before {
+      top: 0; /* Розмістити лінію вгорі */
+      left: -15px; /* Розмістити лінію зліва від тексту */
+      width: 5px; /* Ширина вертикальної лінії */
+      height: 100px; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+  }
+   input[type="text"] {
+       font-size: 10px;
+   }
+   #start-button3{
+       padding: 15px 105px;
+   }
+   #start-button4{
+       padding: 15px 75px;
+   }
+   footer {
+       margin-top: 10px;
+   }
+   footer p {
+       font-size: 8px;
+   }
+}
+
+@media(max-width: 320px) {
+   /* Змініть відступи, шрифти та інші стилі для малих екранів */
+   header, main, form {
+     padding: 10px;
+   }
+ 
+   label {
+     font-size: 15px;
+     left: 5px;
+   }
+   label::before {
+       
+       top: 0; /* Розмістити лінію вгорі */
+       left: 5px; /* Розмістити лінію зліва від тексту */
+       width: 5px; /* Ширина вертикальної лінії */
+       height: 100px; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+   }
+   input[type="text"] {
+     font-size: 20px;
+   }
+   #start-button3{
+       padding: 15px 70px;
+   }
+   #start-button4{
+       padding: 15px 40px;
+   }
+   footer {
+     margin-top: 10px;
+   }
+   footer p {
+     font-size: 8px;
+   }
+ }

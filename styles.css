@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img_file/1920x1280_unbranded_a892134f08.jpg') no-repeat center center fixed; /* Постійний фон із зображенням */
+    background-size: cover; /* Зображення заповнює весь екран */
+    color: #ffffff; /* Білий текст */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Центрувати текст всередині контейнера */
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    right: 25px;
+    top: -10px;
+    font-size: 20px; /* Змініть розмір шрифту для тексту в підвалі */
+    font-weight: bold; /* Зробіть текст жирнішим */
+    position: relative; /* Потрібно для псевдоелементу */
+}
+
+label::before {
+    content: ''; /* Додати пустий контент */
+    position: absolute; /* Абсолютне позиціонування відносно батьківського елементу */
+    top: 0; /* Розмістити лінію вгорі */
+    left: 20px; /* Розмістити лінію зліва від тексту */
+    width: 5px; /* Ширина вертикальної лінії */
+    height: 200%; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+    background-color: rgb(255, 255, 255); /* Колір лінії */
+}
+
+
+.CLG-container {
+    display: flex; /* Встановлюємо контейнеру flexbox */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+    margin-top: 25px; /* Опускаємо контейнер вниз */
+}
+
+.CLG {
+    margin-right: 10px; /* Додатковий відступ справа від елементу "CLG" */
+    font-weight: bold; /* Застосовуємо жирний шрифт */
+    font-size: 25px; /* Змініть розмір шрифту для тексту в підвалі */
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Опускаємо поле вводу вниз */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    outline: none;
+}
+
+form::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white; /* Колір лінії */
+    margin-top: -17px; /* Відстань між формою та лінією */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+#start-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000000b7;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 25px 190px;
+    border: none;
+    position: relative;
+    /* Трансформація кнопки */
+    transition: transform 0.3s ease-in-out; /* Плавна анімація трансформації */
+}
+
+.spinner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000b7;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    display: none; /* Початково приховуємо кружечок */
+    margin-top: 10px; /* Зменшено відступ зверху */
+    top: -8px; /* Додано властивість для встановлення відступу зверху */
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#button-text {
+    display: inline-block;
+}
+
+/* Приклад використання box-shadow */
+#start-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Додаємо тінь при наведенні */
+}
+
+/* Приклад використання outline */
+#start-button:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.5); /* Додаємо контур при фокусі */
+}
+
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+footer {
+   
+    text-align: center;
+    margin-top: -0px; /* Опускаємо контейнер вниз */
+}
+footer p {
+    font-size: 10px; /* Змініть розмір шрифту для тексту в підвалі */
+}
+/* Медіа-запит */
+/* Стилі для екранів з шириною до 480px (мобільні телефони) */
+@media only screen and (max-width: 480px) {
+    /* Змініть відступи, шрифти та інші стилі для малих екранів */
+    header, main, form {
+      padding: 10px;
+    }
+    label {
+      font-size: 15px;
+    }
+    input[type="text"] {
+      font-size: 20px;
+    }
+    #start-button {
+      padding: 15px 140px;
+    }
+    footer {
+      margin-top: 10px;
+    }
+    footer p {
+      font-size: 8px;
+    }
+  }
+  
+  /* Стилі для екранів з шириною від 481px до 768px (планшети) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Змініть відступи, шрифти та інші стилі для середніх екранів */
+    header, main, form {
+      padding: 20px;
+    }
+    label {
+      font-size: 20px;
+    }
+    input[type="text"] {
+      font-size: 25px;
+    }
+    #start-button {
+      padding: 20px 160px;
+    }
+    footer {
+      margin-top: 20px;
+    }
+    footer p {
+      font-size: 12px;
+    }
+  }
+  
+
+  @media(max-width: 320px) {
+    /* Змініть відступи, шрифти та інші стилі для малих екранів */
+    header, main, form {
+      padding: 10px;
+    }
+    label::before {
+      top: 0; /* Розмістити лінію вгорі */
+      left: 20px; /* Розмістити лінію зліва від тексту */
+      width: 5px; /* Ширина вертикальної лінії */
+      height: 200%; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+    }
+  
+    label {
+      font-size: 10px;
+    }
+    input[type="text"] {
+      font-size: 20px;
+    }
+    #start-button {
+      padding: 15px 100px;
+    }
+    footer {
+      margin-top: 10px;
+    }
+    footer p {
+      font-size: 8px;
+    }
+  }

@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img_file/si_nig1.jpg') no-repeat center center fixed; /* Постійний фон із зображенням */
+    background-size: cover; /* Зображення заповнює весь екран, пропорційно обрізаючи */
+    background-attachment: fixed; /* Фіксоване позиціонування фонового зображення */
+    color: #ffffff; /* Білий текст */
+}
+
+/* Медіа-запит для смартфонів */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Змінюємо розмір фонового зображення для смартфонів */
+    }
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Центрувати текст всередині контейнера */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.certilogo-logo-light {
+    max-width: 100%; /* Забезпечуємо максимальну ширину для логотипу */
+    text-align: center; /* Розміщуємо логотип по центру */
+    margin: 0 auto; /* Центруємо логотип в батьківському контейнері */
+}
+
+.certilogo-logo-light img {
+    max-width: 100%; /* Забезпечуємо максимальну ширину для зображення логотипу */
+    height: auto; /* Забезпечуємо збереження пропорційної висоти */
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    right: 25px;
+    top: -10px;
+    font-size: 30px; /* Змініть розмір шрифту для тексту в підвалі */
+    font-weight: bold; /* Зробіть текст жирнішим */
+    position: relative; /* Потрібно для псевдоелементу */
+}
+
+label::before {
+    content: ''; /* Додати пустий контент */
+    position: absolute; /* Абсолютне позиціонування відносно батьківського елементу */
+    top: 0; /* Розмістити лінію вгорі */
+    left: -45px; /* Розмістити лінію зліва від тексту */
+    width: 8px; /* Ширина вертикальної лінії */
+    height: 100px; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+    background-color: rgb(255, 255, 255); /* Колір лінії */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 -70px 0; /* Змініть верхній і нижній відступи відповідно до вашого дизайну */
+}
+
+#start-button5{
+    background-color: rgb(255, 255, 255); /* Напівпрозорий білий колір */
+    color: #000000; /* Білий текст */
+    font-weight: bold; /* Жирний текст */
+    font-size: 15px; /* Розмір тексту */
+    padding: 20px 140px; /* Відступи кнопок */
+    border: none; /* Видалення межі */
+    display: inline-block; /* Замінюємо display: block на display: inline-block */
+    margin: 3px; /* Залиште потрібний відступ */
+    width: auto; /* Залиште ширину кнопок автоматичною */
+    white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+    text-align: center; /* Центруємо текст в кнопках */
+    text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+    cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+    z-index: 99999;
+}
+#start-button6 {
+    background-color: rgb(255, 255, 255); /* Напівпрозорий білий колір */
+    color: #000000; /* Білий текст */
+    font-weight: bold; /* Жирний текст */
+    font-size: 15px; /* Розмір тексту */
+    padding: 20px 110px; /* Відступи кнопок */
+    border: none; /* Видалення межі */
+    display: inline-block; /* Замінюємо display: block на display: inline-block */
+    margin: 3px; /* Залиште потрібний відступ */
+    width: auto; /* Залиште ширину кнопок автоматичною */
+    white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+    text-align: center; /* Центруємо текст в кнопках */
+    text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+    cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+    z-index: 99999;
+
+}
+#start-button7 {
+    background-color: rgb(255, 255, 255); /* Напівпрозорий білий колір */
+    color: #000000; /* Білий текст */
+    font-weight: bold; /* Жирний текст */
+    font-size: 15px; /* Розмір тексту */
+    padding: 20px 135px; /* Відступи кнопок */
+    border: none; /* Видалення межі */
+    display: inline-block; /* Замінюємо display: block на display: inline-block */
+    margin: 3px; /* Залиште потрібний відступ */
+    width: auto; /* Залиште ширину кнопок автоматичною */
+    white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+    text-align: center; /* Центруємо текст в кнопках */
+    text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+    cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+    z-index: 99999;
+
+}
+
+
+#start-button3:hover,
+#start-button4:hover {
+    background-color: #ccc; /* Зміна кольору при наведенні */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Медіа-запит для смартфонів */
+@media (max-width: 480px) {
+    header, main, form {
+        padding: 10px; /* Зменшуємо відступ для малих екранів */
+    }
+    label{
+        font-size: 15px;
+        display: block;
+        margin-bottom: 10px;
+        right: -10px;
+        top: -10px;
+        font-size: 15px; /* Змініть розмір шрифту для тексту в підвалі */
+        font-weight: bold; /* Зробіть текст жирнішим */
+        position: relative; /* Потрібно для псевдоелементу */ /* Зменшуємо розмір шрифту для полів вводу на малих екранах */
+    }
+    label::before {
+        top: 0; /* Розмістити лінію вгорі */
+        left: -15px; /* Розмістити лінію зліва від тексту */
+        width: 5px; /* Ширина вертикальної лінії */
+        height: 100px; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+    }
+    #start-button5{
+        
+        font-size: 15px; /* Розмір тексту */
+        padding: 15px 105px; /* Відступи кнопок */
+        border: none; /* Видалення межі */
+        display: inline-block; /* Замінюємо display: block на display: inline-block */
+        margin: 3px; /* Залиште потрібний відступ */
+        width: auto; /* Залиште ширину кнопок автоматичною */
+        white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+        text-align: center; /* Центруємо текст в кнопках */
+        text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+        cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+        z-index: 99999;
+    }
+    #start-button6 {
+      
+        font-size: 15px; /* Розмір тексту */
+        padding: 15px 75px; /* Відступи кнопок */
+        border: none; /* Видалення межі */
+        display: inline-block; /* Замінюємо display: block на display: inline-block */
+        margin: 3px; /* Залиште потрібний відступ */
+        width: auto; /* Залиште ширину кнопок автоматичною */
+        white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+        text-align: center; /* Центруємо текст в кнопках */
+        text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+        cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+        z-index: 99999;
+    
+    }
+    #start-button7 {
+       
+        font-size: 15px; /* Розмір тексту */
+        padding: 15px 100px; /* Відступи кнопок */
+        border: none; /* Видалення межі */
+        display: inline-block; /* Замінюємо display: block на display: inline-block */
+        margin: 3px; /* Залиште потрібний відступ */
+        width: auto; /* Залиште ширину кнопок автоматичною */
+        white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+        text-align: center; /* Центруємо текст в кнопках */
+        text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+        cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+        z-index: 99999;
+    
+    }
+    footer {
+        margin-top: 15px; /* Збільшуємо відступ підвалу для малих екранів */
+    }
+
+    footer p {
+        font-size: 8px; /* Зменшуємо розмір шрифту для тексту в підвалі на малих екранах */
+    }
+}
+
+@media(max-width: 320px) {
+    /* Змініть відступи, шрифти та інші стилі для малих екранів */
+    header, main, form {
+      padding: 10px;
+    }
+  
+    label {
+      font-size: 15px;
+      left: 5px;
+    }
+    label::before {
+        
+        top: 0; /* Розмістити лінію вгорі */
+        left: 5px; /* Розмістити лінію зліва від тексту */
+        width: 5px; /* Ширина вертикальної лінії */
+        height: 100px; /* Висота вертикальної лінії (розтягується на всю висоту тексту) */
+    }
+    input[type="text"] {
+      font-size: 20px;
+    }
+    #start-button5{
+        
+        font-size: 15px; /* Розмір тексту */
+        padding: 15px 75px; /* Відступи кнопок */
+        border: none; /* Видалення межі */
+        display: inline-block; /* Замінюємо display: block на display: inline-block */
+        margin: 3px; /* Залиште потрібний відступ */
+        width: auto; /* Залиште ширину кнопок автоматичною */
+        white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+        text-align: center; /* Центруємо текст в кнопках */
+        text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+        cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+        z-index: 99999;
+    }
+    #start-button6 {
+      
+        font-size: 15px; /* Розмір тексту */
+        padding: 15px 45px; /* Відступи кнопок */
+        border: none; /* Видалення межі */
+        display: inline-block; /* Замінюємо display: block на display: inline-block */
+        margin: 3px; /* Залиште потрібний відступ */
+        width: auto; /* Залиште ширину кнопок автоматичною */
+        white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+        text-align: center; /* Центруємо текст в кнопках */
+        text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+        cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+        z-index: 99999;
+    
+    }
+    #start-button7 {
+       
+        font-size: 15px; /* Розмір тексту */
+        padding: 15px 70px; /* Відступи кнопок */
+        border: none; /* Видалення межі */
+        display: inline-block; /* Замінюємо display: block на display: inline-block */
+        margin: 3px; /* Залиште потрібний відступ */
+        width: auto; /* Залиште ширину кнопок автоматичною */
+        white-space: nowrap; /* Заборона переносу тексту на новий рядок */
+        text-align: center; /* Центруємо текст в кнопках */
+        text-decoration: none; /* Заборона підкреслення тексту в кнопках */
+        cursor: pointer; /* Зміна курсора на покажчик при наведенні на кнопку */
+        z-index: 99999;
+    
+    }
+    footer {
+      margin-top: 10px;
+    }
+    footer p {
+      font-size: 8px;
+    }
+}
